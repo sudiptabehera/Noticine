@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rxone.nimai">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NIMAI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Noticine.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.rxone.nimai.about"></activity>
+        <activity android:name="com.rxone.nimai.Bug_report" />
+        <activity android:name="com.rxone.nimai.survey" />
+        <activity
+            android:name="com.rxone.nimai.Thumbnail"
+            android:label="Medication thumbnail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Noticine" />
+        <activity
+            android:name="com.rxone.nimai.EditDetails"
+            android:label="Medication Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Noticine" />
+        <activity
+            android:name="com.rxone.nimai.TriggeredMed"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:showForAllUsers="true"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true" />
+        <activity
+            android:name="com.rxone.nimai.Addtiming"
+            android:label="Add Dosage time"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Noticine" />
+        <activity
+            android:name="com.rxone.nimai.Addmed"
+            android:label="Enter Medication"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Noticine" />
+        <activity
+            android:name="com.rxone.nimai.Notiscrl"
+            android:label="All Medication"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Noticine.NoActionBar" />
+        <activity android:name="com.rxone.nimai.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.rxone.nimai.MyAlarm"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

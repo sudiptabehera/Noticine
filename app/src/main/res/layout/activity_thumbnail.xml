@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:backgroundTint="@color/white"
+    tools:context=".Thumbnail">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="326dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/roboto"
+            android:text="Gallery"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/gall"
+            app:iconGravity="top"
+            app:iconSize="40dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/roboto"
+            android:text="Camera"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/cam"
+            app:iconGravity="top"
+            app:iconSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:paddingLeft="30dp"
+            android:paddingTop="9dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="9dp"
+            android:text="Next"
+            app:cornerRadius="15dp"
+            app:icon="@drawable/check"
+            app:iconSize="30dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

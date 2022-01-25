@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Noticine</string>
+    <string name="title_activity_notiscrl">Notiscrl</string>
+    <!-- Strings used for fragments for navigation -->
+    <string-array name="meds">
+        <item>ramipril(Altace)</item>
+        <item>glimepiride(Amaryl)</item>
+        <item>zolpidem(Ambien)</item>
+        <item>lorazepam(Ativan)</item>
+        <item>lorazepamy(Ativan)</item>
+        <item>lorazepams(Ativan)</item>
+        <item>lorazepamd(Ativan)</item>
+        <item>verapamil SR(Calan SR)</item>
+        <item>diltiazem ER(Cardizem)</item>
+        <item>citalopram(Celexa)</item>
+        <item>warfarin</item>
+        <item>glyburide</item>
+        <item>phenytoin</item>
+        <item>venlafaxine</item>
+        <item>fluticasone</item>
+        <item>alendronate</item>
+        <item>metformin</item>
+        <item>glipizide</item>
+        <item>terazosin</item>
+        <item>sumatriptan</item>
+        <item>furosemide</item>
+        <item>gemfibrozil</item>
+        <item>lovastatin</item>
+        <item>glyburide</item>
+        <item>amlodipine</item>
+        <item>paroxetine</item>
+        <item>famotidine</item>
+        <item>pravastatin</item>
+        <item>omeprazole</item>
+        <item>lisinopril</item>
+        <item>nifedipine</item>
+        <item>nifedipine XL</item>
+        <item>albuterol</item>
+        <item>fluoxetine</item>
+        <item>tretinoin</item>
+        <item>risperidone</item>
+        <item>zaleplon</item>
+        <item>levothyroxine</item>
+        <item>timolol</item>
+        <item>metoprolol</item>
+        <item>acetaminophen</item>
+        <item>tramadol</item>
+        <item>enalapril</item>
+        <item>albuterol</item>
+        <item>bupropion</item>
+        <item>bupropion ext-release</item>
+        <item>alprazolam</item>
+        <item>drospirenone</item>
+        <item>ranitidine</item>
+        <item>lisinopril</item>
+        <item>simvastatin</item>
+        <item>sertraline</item>
+        <item>acyclovir</item>
+
+    </string-array>
+
+    <string-array name="docs">
+        <item>Dr Wiwi</item>
+        <item>Dr Lecher</item>
+        <item>Dr Risk</item>
+        <item>Dr Heinie</item>
+        <item> Dr Fingerhut</item>
+        <item>Dr Jamm</item>
+        <item>Dr Payne</item>
+
+
+    </string-array>
+</resources>
